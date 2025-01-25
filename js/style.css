@@ -1,0 +1,248 @@
+h1 {
+    position: absolute;
+    z-index: 7000;
+    bottom: 140px;
+    left: 50%;
+    left: calc( 50% - 110px );
+    margin: 0;
+    font: 28px 'Roboto-Bold', sans-serif;
+    color: #000;
+}
+h1 b{
+    color: white;
+    text-shadow: 1px 2px 0px black;
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+    bottom: 120px;        
+}
+#about {
+    position: absolute;
+    z-index: 7001;
+    width: 300px;
+    top: 40px;
+    left: 40px;
+    font: 14px 'Voces', Arial, sans-serif;
+    color: white;
+    line-height: 1.3rem;
+    background: rgba(0,0,0,0.2);
+    padding: 1rem;
+    box-sizing: border-box;
+}
+#about b{
+    font-weight: bold;
+    font-family: monospace;
+}
+#about p:last-child{
+    margin: 0;
+}
+#about a{
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    transition: border-bottom-width 0.1s;
+    display: inline-block;
+    background: rgba(255,255,255,0.4);
+    padding: 0 3px;
+}
+#about a:hover{
+    background: rgba(255,255,255,1);
+}
+h1 a{
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 2px 0px black;
+}
+a-link{
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    transition: border-bottom-width 0.1s;
+    display: inline-block;
+    background: rgba(255,255,255,0.4);
+    padding: 0 3px;
+}
+
+@media (max-width: 400px), (max-height: 300px) {
+    #about {
+        left: 5%;
+        top: 5%;
+        width: 90%;
+    }
+    h1 {
+    left: 5%;
+    }
+    h1 b {
+    width: auto;
+    }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  color:#fafafa;
+}
+
+.overlay-footer {
+  position: absolute;
+  inset: auto 0 0 0;
+  margin: 30px;
+}
+
+.a-dom-overlay button {
+  padding: 1em;
+  appearance: none;
+  background: #00000055;
+  border: 3px solid white;
+  border-radius: 1em;
+  margin: 1em 1em 0 0;
+  color: white;
+}
+
+#my-interface {
+  user-select: none;
+}
+
+#a-dom-overlay h2 {
+  margin: 0;
+  font-weight: 300;
+  font-style: normal;
+  padding: 0;
+}
+
+
+#a-dom-overlay h1 {
+  font-weight: 600;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+
+#my-interface fieldset {
+  padding: 0;
+  margin-bottom: 2.5em;
+}
+
+#dom-overlay-message {
+  padding: 1em;
+  border-top: 5px solid #ffffff55;
+  color: white;
+}
+.preset-switcher{
+    margin-bottom:30px;
+}
+.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
+
+.rs-base {
+  background-color: #333;
+  color: #fafafa;
+  border-radius: 0;
+  font: 10px monospace;
+  left: 5px;
+  line-height: 1em;
+  opacity: 0.85;
+  overflow: hidden;
+  padding: 10px;
+  position: fixed;
+  top: 5px;
+  width: 300px;
+  z-index: 10000;
+}
+
+.rs-base div.hidden {
+  display: none;
+}
+
+.rs-base h1 {
+    display:none!important;
+}
+
+.rs-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  margin-bottom: 5px;
+}
+
+.rs-group:last-child {
+  margin-bottom: 0;
+}
+
+.rs-counter-base {
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  height: 10px;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin: 2px 0;
+}
+
+.rs-counter-base.alarm {
+  color: #b70000;
+  text-shadow: 0 0 0 #b70000,
+               0 0 1px #fff,
+               0 0 1px #fff,
+               0 0 2px #fff,
+               0 0 2px #fff,
+               0 0 3px #fff,
+               0 0 3px #fff,
+               0 0 4px #fff,
+               0 0 4px #fff;
+}
+
+.rs-counter-id {
+  font-weight: 300;
+  -webkit-box-ordinal-group: 0;
+  -webkit-order: 0;
+  order: 0;
+  width: 54px;
+}
+
+.rs-counter-value {
+  font-weight: 300;
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 1;
+  order: 1;
+  text-align: right;
+  width: 35px;
+}
+
+.rs-canvas {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 2;
+  order: 2;
+}
+
+@media (min-width: 480px) {
+  .rs-base {
+    left: 40px!important;
+    top: 200px!important;
+  }
+}
+.a-loader-title {
+    display:none!important;
+
+}
+button {
+    border: 0;
+    background: #FF74b8;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #FAFAFA;
+    text-transform: uppercase;
+    transition: .1s all;
+    padding: 11px 20px;
+    vertical-align: middle;
+}
+
+button:hover {
+    background: #FF94C8;
+}
